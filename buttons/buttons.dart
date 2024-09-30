@@ -31,10 +31,9 @@ class _FEButtonState extends State<FEButton> {
 
 class FEButtonElevated extends StatefulWidget {
   final dynamic onPressed;
+  final String text;
 
-  final dynamic child;
-
-  const FEButtonElevated({super.key, this.onPressed, this.child});
+  const FEButtonElevated({super.key, this.onPressed, required this.text});
 
   @override
   State<FEButtonElevated> createState() => _FEButtonElevatedState();
@@ -43,44 +42,24 @@ class FEButtonElevated extends StatefulWidget {
 class _FEButtonElevatedState extends State<FEButtonElevated> {
   @override
   Widget build(BuildContext context) {
-    return Column(
-      children: [
-        Container(
-          padding: const EdgeInsets.symmetric(horizontal: 24, vertical: 16),
-          clipBehavior: Clip.antiAlias,
-          decoration: ShapeDecoration(
-            color: Color(0xFFEA5017),
-            shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(4)),
-          ),
-          child: Column(
-            mainAxisSize: MainAxisSize.min,
-            mainAxisAlignment: MainAxisAlignment.center,
-            crossAxisAlignment: CrossAxisAlignment.center,
-            children: [
-              Container(
-                child: Row(
-                  mainAxisSize: MainAxisSize.min,
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  crossAxisAlignment: CrossAxisAlignment.center,
-                  children: [
-                    Text(
-                      'Label Large Text',
-                      textAlign: TextAlign.center,
-                      style: TextStyle(
-                        color: Colors.white,
-                        fontSize: 14,
-                        fontFamily: 'Inter',
-                        fontWeight: FontWeight.w600,
-                        height: 0.10,
-                      ),
-                    ),
-                  ],
-                ),
-              ),
-            ],
-          ),
+    return ElevatedButton(
+      onPressed: widget.onPressed,
+      style: ElevatedButton.styleFrom(
+        padding: const EdgeInsets.symmetric(horizontal: 24, vertical: 16),
+        backgroundColor: const Color(0xFFEA5017),
+        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(4)),
+      ),
+      child: Text(
+        widget.text,
+        textAlign: TextAlign.center,
+        style: const TextStyle(
+          color: Colors.white,
+          fontSize: 14,
+          fontFamily: 'Inter',
+          fontWeight: FontWeight.w600,
+          height: 0.10,
         ),
-      ],
+      ),
     );
   }
 }
