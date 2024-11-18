@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:freegate/flutter-elementrix/appbar/appbar.dart';
-import 'package:freegate/flutter-elementrix/appbar/glass_appbar.dart';
 import 'package:freegate/flutter-elementrix/appbar/search.dart';
 import 'package:freegate/flutter-elementrix/buttons/buttons.dart';
 import 'package:freegate/flutter-elementrix/card/card_with_image_text_trailing.dart';
+import 'package:freegate/flutter-elementrix/card/card_with_title_subtitle.dart';
 import 'package:freegate/flutter-elementrix/dialog/dialog.dart';
 import 'package:freegate/flutter-elementrix/header/headers.dart';
 import 'package:freegate/flutter-elementrix/scaffold/gradient_scaffold.dart';
@@ -31,11 +31,7 @@ class _DemoWidgetState extends State<DemoWidget> {
         begin: Alignment.topLeft,
         end: Alignment.bottomRight,
         tileMode: TileMode.mirror,
-        colors: [
-          Colors.orangeAccent,
-          Colors.amberAccent,
-          Colors.amber
-        ],
+        colors: [Colors.white70, Colors.white70],
       ),
       appBar: FEAppBar(
         title: const Text('Flutter Demo'),
@@ -82,7 +78,6 @@ class _DemoWidgetState extends State<DemoWidget> {
                 icon: Icons.add,
                 text: 'Increment Icon Text Outlined',
               ),
-
               FEDialog(
                 title: const Text('Dialog Title'),
                 content: const Text('Dialog Content'),
@@ -97,7 +92,6 @@ class _DemoWidgetState extends State<DemoWidget> {
                   ),
                 ],
               ),
-
               const FEHeader(
                 text: 'Header Text',
                 subtitle: 'Header Subtitle',
@@ -114,11 +108,16 @@ class _DemoWidgetState extends State<DemoWidget> {
                 icon: Icons.add,
                 onPressed: () async {},
               ),
-              CardWithImageTextTrailing(
+              FECardWithImageTextTrailing(
                 text: 'Card Text',
                 imageUrl: 'https://via.placeholder.com/150',
                 subtitle: 'Card Subtitle',
                 onPressed: () async {},
+              ),
+              const CardWithTitleSubtitle(
+                title: 'Card Title',
+                subtitle: 'Card Subtitle',
+                backgroundColor: Colors.blue,
               ),
             ],
           ),

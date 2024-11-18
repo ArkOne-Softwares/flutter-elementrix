@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
 
-class CardWithImageTextTrailing extends StatelessWidget {
+class FECardWithImageTextTrailing extends StatelessWidget {
   final String text;
   final String imageUrl;
   final String subtitle;
   final Function() onPressed;
 
-  const CardWithImageTextTrailing(
+  const FECardWithImageTextTrailing(
       {required this.text, required this.imageUrl, required this.subtitle, required this.onPressed, super.key});
 
   @override
