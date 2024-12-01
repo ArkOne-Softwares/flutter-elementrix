@@ -1,12 +1,11 @@
 import 'package:flutter/material.dart';
-import 'package:freegate/flutter-elementrix/appbar/appbar.dart';
-import 'package:freegate/flutter-elementrix/appbar/glass_appbar.dart';
-import 'package:freegate/flutter-elementrix/appbar/search.dart';
-import 'package:freegate/flutter-elementrix/buttons/buttons.dart';
-import 'package:freegate/flutter-elementrix/card/card_with_image_text_trailing.dart';
-import 'package:freegate/flutter-elementrix/dialog/dialog.dart';
-import 'package:freegate/flutter-elementrix/header/headers.dart';
-import 'package:freegate/flutter-elementrix/scaffold/gradient_scaffold.dart';
+import 'package:urbanway/flutter-elementrix/appbar/appbar.dart';
+import 'package:urbanway/flutter-elementrix/appbar/search.dart';
+import 'package:urbanway/flutter-elementrix/buttons/buttons.dart';
+import 'package:urbanway/flutter-elementrix/card/card_with_image_text_trailing.dart';
+import 'package:urbanway/flutter-elementrix/dialog/dialog.dart';
+import 'package:urbanway/flutter-elementrix/header/headers.dart';
+import 'package:urbanway/flutter-elementrix/scaffold/gradient_scaffold.dart';
 
 class DemoWidget extends StatefulWidget {
   const DemoWidget({Key? key}) : super(key: key);
