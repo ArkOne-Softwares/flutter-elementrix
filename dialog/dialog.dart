@@ -26,7 +26,8 @@ class FEDialog extends Dialog {
         width: MediaQuery.of(context).size.width / 1.5,
         padding: const EdgeInsets.all(20),
         decoration: BoxDecoration(
-          gradient: LinearGradient(colors: [UiConfig.primaryColor, UiConfig.secondaryColor]),
+          gradient: LinearGradient(
+              colors: [UiConfig.primaryColor, UiConfig.secondaryColor]),
           borderRadius: BorderRadius.circular(8.0),
           boxShadow: [
             BoxShadow(
@@ -40,11 +41,19 @@ class FEDialog extends Dialog {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            if (icon != null) ...[Icon(icon!, size: 50, color: UiConfig.accentColor), const SizedBox(height: 10)],
-            if (image != null) ...[Image.asset(image!, width: 50, height: 50), const SizedBox(height: 10)],
+            if (icon != null) ...[
+              Icon(icon!, size: 50, color: UiConfig.accentColor),
+              const SizedBox(height: 10)
+            ],
+            if (image != null) ...[
+              Image.asset(image!, width: 50, height: 50),
+              const SizedBox(height: 10)
+            ],
             if (title != null) ...[
               DefaultTextStyle(
-                style: TextStyle(fontSize: UiConfig.fontSize + 6, color: UiConfig.accentColor),
+                style: TextStyle(
+                    fontSize: UiConfig.fontSize + 6,
+                    color: UiConfig.accentColor),
                 child: title!,
               ),
               const SizedBox(
@@ -53,7 +62,8 @@ class FEDialog extends Dialog {
             ],
             if (content != null) ...[
               DefaultTextStyle(
-                style: TextStyle(fontSize: UiConfig.fontSize, color: UiConfig.accentColor),
+                style: TextStyle(
+                    fontSize: UiConfig.fontSize, color: UiConfig.accentColor),
                 child: content!,
               ),
               const SizedBox(

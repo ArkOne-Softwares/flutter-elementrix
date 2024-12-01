@@ -1,4 +1,3 @@
-
 class TextUtils {
   static bool parseBool(dynamic text) {
     if (text.toString().compareTo("1") == 0 ||

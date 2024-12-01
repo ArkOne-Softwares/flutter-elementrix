@@ -6,8 +6,11 @@ class CardWithImageTextTrailing extends StatelessWidget {
   final String subtitle;
   final Function() onPressed;
 
-  const CardWithImageTextTrailing(
-      {required this.text, required this.imageUrl, required this.subtitle, required this.onPressed, super.key});
+  const CardWithImageTextTrailing({required this.text,
+    required this.imageUrl,
+    required this.subtitle,
+    required this.onPressed,
+    super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -22,7 +25,10 @@ class CardWithImageTextTrailing extends StatelessWidget {
           borderRadius: BorderRadius.circular(6),
           boxShadow: [
             BoxShadow(
-                offset: const Offset(10, 20), blurRadius: 10, spreadRadius: 0, color: Colors.grey.withOpacity(.05)),
+                offset: const Offset(10, 20),
+                blurRadius: 10,
+                spreadRadius: 0,
+                color: Colors.grey.withOpacity(.05)),
           ],
         ),
         child: Row(
@@ -42,7 +48,10 @@ class CardWithImageTextTrailing extends StatelessWidget {
             Text(
               subtitle,
               textAlign: TextAlign.center,
-              style: const TextStyle(color: Colors.grey, fontWeight: FontWeight.normal, fontSize: 12),
+              style: const TextStyle(
+                  color: Colors.grey,
+                  fontWeight: FontWeight.normal,
+                  fontSize: 12),
             ),
           ],
         ),

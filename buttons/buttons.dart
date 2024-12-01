@@ -49,7 +49,8 @@ class FEButtonOutlined extends OutlinedButton {
           style: ButtonStyle(
             elevation: WidgetStateProperty.all(0),
             alignment: Alignment.center,
-            side: WidgetStateProperty.all(const BorderSide(width: 1, color: bgColor)),
+            side: WidgetStateProperty.all(
+                const BorderSide(width: 1, color: bgColor)),
             backgroundColor: WidgetStateProperty.all(Colors.transparent),
             padding: WidgetStateProperty.all<EdgeInsetsGeometry>(
               const EdgeInsets.symmetric(
@@ -108,7 +109,8 @@ class FEButtonIconOutlined extends OutlinedButton {
           style: ButtonStyle(
             elevation: WidgetStateProperty.all(0),
             alignment: Alignment.center,
-            side: WidgetStateProperty.all(const BorderSide(width: 1, color: bgColor)),
+            side: WidgetStateProperty.all(
+                const BorderSide(width: 1, color: bgColor)),
             backgroundColor: WidgetStateProperty.all(Colors.transparent),
             padding: WidgetStateProperty.all<EdgeInsetsGeometry>(
               const EdgeInsets.symmetric(
@@ -195,7 +197,8 @@ class FEButtonIconTextOutlined extends OutlinedButton {
           style: ButtonStyle(
             elevation: WidgetStateProperty.all(0),
             alignment: Alignment.center,
-            side: WidgetStateProperty.all(const BorderSide(width: 1, color: bgColor)),
+            side: WidgetStateProperty.all(
+                const BorderSide(width: 1, color: bgColor)),
             backgroundColor: WidgetStateProperty.all(Colors.transparent),
             padding: WidgetStateProperty.all<EdgeInsetsGeometry>(
               const EdgeInsets.symmetric(

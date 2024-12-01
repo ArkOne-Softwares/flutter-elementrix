@@ -30,11 +30,7 @@ class _DemoWidgetState extends State<DemoWidget> {
         begin: Alignment.topLeft,
         end: Alignment.bottomRight,
         tileMode: TileMode.mirror,
-        colors: [
-          Colors.orangeAccent,
-          Colors.amberAccent,
-          Colors.amber
-        ],
+        colors: [Colors.orangeAccent, Colors.amberAccent, Colors.amber],
       ),
       appBar: FEAppBar(
         title: const Text('Flutter Demo'),
@@ -81,7 +77,6 @@ class _DemoWidgetState extends State<DemoWidget> {
                 icon: Icons.add,
                 text: 'Increment Icon Text Outlined',
               ),
-
               FEDialog(
                 title: const Text('Dialog Title'),
                 content: const Text('Dialog Content'),
@@ -96,7 +91,6 @@ class _DemoWidgetState extends State<DemoWidget> {
                   ),
                 ],
               ),
-
               const FEHeader(
                 text: 'Header Text',
                 subtitle: 'Header Subtitle',

@@ -56,7 +56,8 @@ class AppTheme {
     double? finalFontSize = fontSize;
 
     Color? finalColor;
-    finalColor = xMuted ? color.withAlpha(160) : (muted ? color.withAlpha(200) : color);
+    finalColor =
+        xMuted ? color.withAlpha(160) : (muted ? color.withAlpha(200) : color);
 
     return fontFamily(
       fontSize: finalFontSize,
@@ -71,53 +72,92 @@ class AppTheme {
 
   // TODO: CHANGE APPBAR THEME (LIGHT SCHEME)
   static final TextTheme lightAppBarTextTheme = TextTheme(
-    displayLarge: fontFamily(textStyle: const TextStyle(fontSize: 102, color: Color(0xff495057))),
-    displayMedium: fontFamily(textStyle: const TextStyle(fontSize: 64, color: Color(0xff495057))),
-    displaySmall: fontFamily(textStyle: const TextStyle(fontSize: 51, color: Color(0xff495057))),
-    headlineMedium: fontFamily(textStyle: const TextStyle(fontSize: 36, color: Color(0xff495057))),
-    headlineSmall: fontFamily(textStyle: const TextStyle(fontSize: 25, color: Color(0xff495057))),
-    titleLarge: fontFamily(textStyle: const TextStyle(fontSize: 20, color: Color(0xff495057))),
-    titleMedium: fontFamily(textStyle: const TextStyle(fontSize: 17, color: Color(0xff495057))),
-    titleSmall: fontFamily(textStyle: const TextStyle(fontSize: 15, color: Color(0xff495057))),
-    bodyLarge: fontFamily(textStyle: const TextStyle(fontSize: 16, color: Color(0xff495057))),
-    bodyMedium: fontFamily(textStyle: const TextStyle(fontSize: 14, color: Color(0xff495057))),
-    labelLarge: fontFamily(textStyle: const TextStyle(fontSize: 15, color: Color(0xff495057))),
-    bodySmall: fontFamily(textStyle: const TextStyle(fontSize: 13, color: Color(0xff495057))),
-    labelSmall: fontFamily(textStyle: const TextStyle(fontSize: 11, color: Color(0xff495057))),
+    displayLarge: fontFamily(
+        textStyle: const TextStyle(fontSize: 102, color: Color(0xff495057))),
+    displayMedium: fontFamily(
+        textStyle: const TextStyle(fontSize: 64, color: Color(0xff495057))),
+    displaySmall: fontFamily(
+        textStyle: const TextStyle(fontSize: 51, color: Color(0xff495057))),
+    headlineMedium: fontFamily(
+        textStyle: const TextStyle(fontSize: 36, color: Color(0xff495057))),
+    headlineSmall: fontFamily(
+        textStyle: const TextStyle(fontSize: 25, color: Color(0xff495057))),
+    titleLarge: fontFamily(
+        textStyle: const TextStyle(fontSize: 20, color: Color(0xff495057))),
+    titleMedium: fontFamily(
+        textStyle: const TextStyle(fontSize: 17, color: Color(0xff495057))),
+    titleSmall: fontFamily(
+        textStyle: const TextStyle(fontSize: 15, color: Color(0xff495057))),
+    bodyLarge: fontFamily(
+        textStyle: const TextStyle(fontSize: 16, color: Color(0xff495057))),
+    bodyMedium: fontFamily(
+        textStyle: const TextStyle(fontSize: 14, color: Color(0xff495057))),
+    labelLarge: fontFamily(
+        textStyle: const TextStyle(fontSize: 15, color: Color(0xff495057))),
+    bodySmall: fontFamily(
+        textStyle: const TextStyle(fontSize: 13, color: Color(0xff495057))),
+    labelSmall: fontFamily(
+        textStyle: const TextStyle(fontSize: 11, color: Color(0xff495057))),
   );
 
   // TODO: CHANGE APPBAR THEME (DARK SCHEME)
   static final TextTheme darkAppBarTextTheme = TextTheme(
-    displayLarge: fontFamily(textStyle: const TextStyle(fontSize: 102, color: Color(0xffffffff))),
-    displayMedium: fontFamily(textStyle: const TextStyle(fontSize: 64, color: Color(0xffffffff))),
-    displaySmall: fontFamily(textStyle: const TextStyle(fontSize: 51, color: Color(0xffffffff))),
-    headlineMedium: fontFamily(textStyle: const TextStyle(fontSize: 36, color: Color(0xffffffff))),
-    headlineSmall: fontFamily(textStyle: const TextStyle(fontSize: 25, color: Color(0xffffffff))),
-    titleLarge: fontFamily(textStyle: const TextStyle(fontSize: 20, color: Color(0xffffffff))),
-    titleMedium: fontFamily(textStyle: const TextStyle(fontSize: 17, color: Color(0xffffffff))),
-    titleSmall: fontFamily(textStyle: const TextStyle(fontSize: 15, color: Color(0xffffffff))),
-    bodyLarge: fontFamily(textStyle: const TextStyle(fontSize: 16, color: Color(0xffffffff))),
-    bodyMedium: fontFamily(textStyle: const TextStyle(fontSize: 14, color: Color(0xffffffff))),
-    labelLarge: fontFamily(textStyle: const TextStyle(fontSize: 15, color: Color(0xffffffff))),
-    bodySmall: fontFamily(textStyle: const TextStyle(fontSize: 13, color: Color(0xffffffff))),
-    labelSmall: fontFamily(textStyle: const TextStyle(fontSize: 11, color: Color(0xffffffff))),
+    displayLarge: fontFamily(
+        textStyle: const TextStyle(fontSize: 102, color: Color(0xffffffff))),
+    displayMedium: fontFamily(
+        textStyle: const TextStyle(fontSize: 64, color: Color(0xffffffff))),
+    displaySmall: fontFamily(
+        textStyle: const TextStyle(fontSize: 51, color: Color(0xffffffff))),
+    headlineMedium: fontFamily(
+        textStyle: const TextStyle(fontSize: 36, color: Color(0xffffffff))),
+    headlineSmall: fontFamily(
+        textStyle: const TextStyle(fontSize: 25, color: Color(0xffffffff))),
+    titleLarge: fontFamily(
+        textStyle: const TextStyle(fontSize: 20, color: Color(0xffffffff))),
+    titleMedium: fontFamily(
+        textStyle: const TextStyle(fontSize: 17, color: Color(0xffffffff))),
+    titleSmall: fontFamily(
+        textStyle: const TextStyle(fontSize: 15, color: Color(0xffffffff))),
+    bodyLarge: fontFamily(
+        textStyle: const TextStyle(fontSize: 16, color: Color(0xffffffff))),
+    bodyMedium: fontFamily(
+        textStyle: const TextStyle(fontSize: 14, color: Color(0xffffffff))),
+    labelLarge: fontFamily(
+        textStyle: const TextStyle(fontSize: 15, color: Color(0xffffffff))),
+    bodySmall: fontFamily(
+        textStyle: const TextStyle(fontSize: 13, color: Color(0xffffffff))),
+    labelSmall: fontFamily(
+        textStyle: const TextStyle(fontSize: 11, color: Color(0xffffffff))),
   );
 
   // TODO: CHANGE TEXT THEME (LIGHT SCHEME)
   static final TextTheme lightTextTheme = TextTheme(
-    displayLarge: fontFamily(textStyle: const TextStyle(fontSize: 102, color: Color(0xff4a4c4f))),
-    displayMedium: fontFamily(textStyle: const TextStyle(fontSize: 64, color: Color(0xff4a4c4f))),
-    displaySmall: fontFamily(textStyle: const TextStyle(fontSize: 51, color: Color(0xff4a4c4f))),
-    headlineMedium: fontFamily(textStyle: const TextStyle(fontSize: 36, color: Color(0xff4a4c4f))),
-    headlineSmall: fontFamily(textStyle: const TextStyle(fontSize: 25, color: Color(0xff4a4c4f))),
-    titleLarge: fontFamily(textStyle: const TextStyle(fontSize: 20, color: Color(0xff4a4c4f))),
-    titleMedium: fontFamily(textStyle: const TextStyle(fontSize: 17, color: Color(0xff4a4c4f))),
-    titleSmall: fontFamily(textStyle: const TextStyle(fontSize: 15, color: Color(0xff4a4c4f))),
-    bodyLarge: fontFamily(textStyle: const TextStyle(fontSize: 16, color: Color(0xff4a4c4f))),
-    bodyMedium: fontFamily(textStyle: const TextStyle(fontSize: 14, color: Color(0xff4a4c4f))),
-    labelLarge: fontFamily(textStyle: const TextStyle(fontSize: 15, color: Color(0xff4a4c4f))),
-    bodySmall: fontFamily(textStyle: const TextStyle(fontSize: 13, color: Color(0xff4a4c4f))),
-    labelSmall: fontFamily(textStyle: const TextStyle(fontSize: 11, color: Color(0xff4a4c4f))),
+    displayLarge: fontFamily(
+        textStyle: const TextStyle(fontSize: 102, color: Color(0xff4a4c4f))),
+    displayMedium: fontFamily(
+        textStyle: const TextStyle(fontSize: 64, color: Color(0xff4a4c4f))),
+    displaySmall: fontFamily(
+        textStyle: const TextStyle(fontSize: 51, color: Color(0xff4a4c4f))),
+    headlineMedium: fontFamily(
+        textStyle: const TextStyle(fontSize: 36, color: Color(0xff4a4c4f))),
+    headlineSmall: fontFamily(
+        textStyle: const TextStyle(fontSize: 25, color: Color(0xff4a4c4f))),
+    titleLarge: fontFamily(
+        textStyle: const TextStyle(fontSize: 20, color: Color(0xff4a4c4f))),
+    titleMedium: fontFamily(
+        textStyle: const TextStyle(fontSize: 17, color: Color(0xff4a4c4f))),
+    titleSmall: fontFamily(
+        textStyle: const TextStyle(fontSize: 15, color: Color(0xff4a4c4f))),
+    bodyLarge: fontFamily(
+        textStyle: const TextStyle(fontSize: 16, color: Color(0xff4a4c4f))),
+    bodyMedium: fontFamily(
+        textStyle: const TextStyle(fontSize: 14, color: Color(0xff4a4c4f))),
+    labelLarge: fontFamily(
+        textStyle: const TextStyle(fontSize: 15, color: Color(0xff4a4c4f))),
+    bodySmall: fontFamily(
+        textStyle: const TextStyle(fontSize: 13, color: Color(0xff4a4c4f))),
+    labelSmall: fontFamily(
+        textStyle: const TextStyle(fontSize: 11, color: Color(0xff4a4c4f))),
   );
 
   static NavigationBarTheme getNavigationThemeFromMode(int themeMode) {
